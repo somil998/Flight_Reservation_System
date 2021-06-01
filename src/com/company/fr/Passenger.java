@@ -43,5 +43,12 @@ public class Passenger  {
     public String getContactDetails() {
         return contact.name + ", " + contact.phone + ", " + contact.email;
     }
+    public void UpdateAddressDetails(String AddressDetails){
 
+        System.out.println(getAddressDetails());
+    }
+    public void UpdateContactDetails(String ContactDetails){
+
+        System.out.println(getContactDetails());
+    }
 }
