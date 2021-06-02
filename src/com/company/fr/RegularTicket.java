@@ -1,9 +1,13 @@
 package com.company.fr;
 
 public class RegularTicket extends Ticket {
-    public RegularTicket(String pnrNumber,String departure,String Destination,float departureTime,String specialService){
-        super(pnrNumber, departure, Destination,departureTime);
+    public RegularTicket(String pnrNumber, String departure, String arrival, String departureDateTime, String arrivalDateTime, String seatNo, float price, String specialService, boolean cancelled){
+        super(pnrNumber,arrival,departureDateTime,arrivalDateTime,seatNo,price,cancelled);
         this.specialService = getSpecialService();
+    }
+
+    void printTicketDetail(){
+        System.out.println(getPnr());
     }
 
     public void setSpecialService(String specialService) {
